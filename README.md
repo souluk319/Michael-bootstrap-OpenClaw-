@@ -1,76 +1,47 @@
-# michael-bootstrap
+<p align="center">
+  <img src="./assets/openclaw-michael-hero.svg" alt="Michael for OpenClaw - custom by www.kugnus.com" width="100%" />
+</p>
 
-One-touch bootstrap kit for installing OpenClaw and Michael's workspace setup on a new Mac or Windows PC.
+# Michael for OpenClaw
 
-## Purpose
+**김성욱 개인 사용 버전 OpenClaw. 이름은 Michael.**
 
-This repo helps 성욱 attach `Michael` to a fresh machine with the same working rules, workspace structure, and verification checklist.
+Michael은 새 Mac이나 Windows PC에 성욱의 OpenClaw 작업환경을 빠르게 붙이기 위한 개인 부트스트랩 키트다.  
+작업 규칙, Michael 정체성 파일, 기본 workspace 구조, 검증 스크립트를 한 번에 준비한다.
 
-It does **not** store secrets.
+**커스텀 바이 [www.kugnus.com](https://www.kugnus.com)**
 
-Do not commit:
+## 한 줄 요약
 
-- API keys
-- OAuth tokens
-- Apple account credentials
-- Gmail tokens
-- GitHub tokens
-- production `.env` files
-- local message databases
+OpenClaw를 그냥 설치하는 repo가 아니라, **김성욱이 쓰는 방식으로 커스텀된 Michael 작업환경 배포판**이다.
 
-## Supported targets
-
-- macOS: first-class MVP
-- Windows: first-pass PowerShell installer
-
-Windows support is designed for basic OpenClaw/workspace setup. Some Apple-specific features such as iMessage are macOS-only.
-
-## Quick start
+## One-touch Install
 
 ### macOS
 
 ```bash
-git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap
-cd michael-bootstrap
-bash scripts/bootstrap-macos.sh
+git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap && cd michael-bootstrap && bash scripts/bootstrap-macos.sh
 ```
 
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap
-cd michael-bootstrap
-powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows.ps1
+git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap; cd michael-bootstrap; powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows.ps1
 ```
 
-## What it installs or checks
+## What This Sets Up
 
-- Git
-- Node.js
-- Python
-- OpenClaw npm package
-- ClawHub npm package
-- Michael workspace files
-- Standard workspace folders
-- Local env template
+- OpenClaw CLI
+- ClawHub CLI
+- Git / Node.js / Python checks
+- Michael workspace identity files
+- Standard project folders
+- Local env template without secrets
+- macOS / Windows verification scripts
 
-## Workspace target
+## Included Michael Files
 
-Default workspace path:
-
-```text
-~/.openclaw/workspace
-```
-
-On Windows:
-
-```text
-%USERPROFILE%\.openclaw\workspace
-```
-
-## Included Michael files
-
-The bootstrap copies these files into the new workspace:
+These files are copied into the target workspace:
 
 - `AGENTS.md`
 - `SOUL.md`
@@ -80,9 +51,21 @@ The bootstrap copies these files into the new workspace:
 
 Existing files are backed up before replacement.
 
-## After bootstrap
+## Workspace Target
 
-Run verification:
+Default workspace path on macOS:
+
+```text
+~/.openclaw/workspace
+```
+
+Default workspace path on Windows:
+
+```text
+%USERPROFILE%\.openclaw\workspace
+```
+
+## Verify After Install
 
 ### macOS
 
@@ -96,22 +79,35 @@ bash scripts/verify-macos.sh
 powershell -ExecutionPolicy Bypass -File .\scripts\verify-windows.ps1
 ```
 
-Then connect auth manually:
+## Secrets Policy
+
+This repo does **not** store secrets.
+
+Do not commit:
+
+- API keys
+- OAuth tokens
+- Apple account credentials
+- Gmail tokens
+- GitHub tokens
+- production `.env` files
+- local message databases
+
+Manual auth still happens after bootstrap:
 
 - GitHub CLI
 - Gmail connector or `gog`
-- OpenAI/API keys
-- iMessage/macOS permissions if needed
-- Vercel/Render/Supabase project credentials when needed
+- OpenAI / API keys
+- iMessage / macOS permissions if needed
+- Vercel / Render / Supabase credentials when needed
 
-See `docs/secrets-and-auth.md`.
+See [`docs/secrets-and-auth.md`](docs/secrets-and-auth.md).
 
-## Current status
+## Current Status
 
-- Bootstrap project scaffolded
-- macOS installer added
-- Windows installer added
-- workspace config templates copied
-- verification scripts added
+- macOS installer ready
+- Windows installer ready
+- workspace config templates included
+- verification scripts included
 - GitHub remote connected: `https://github.com/souluk319/Michael-bootstrap-OpenClaw-`
 - Initial `main` push completed
