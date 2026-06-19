@@ -7,7 +7,7 @@ Windows bootstrap is a first-pass installer.
 - Git installation through winget
 - Node.js installation through winget
 - Python installation through winget
-- npm global install of `openclaw` and `clawhub`
+- npm global install of `openclaw@latest` and `clawhub@latest`
 - workspace folder creation
 - Michael config file copy
 - basic verification
@@ -46,4 +46,3 @@ Then run:
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows.ps1
 ```
-

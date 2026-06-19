@@ -61,8 +61,8 @@ if (-not (Test-Command "npm")) {
   throw "npm is unavailable. Restart PowerShell after Node.js install, then rerun this script."
 }
 
-Write-Step "Installing OpenClaw npm tools"
-npm install -g openclaw clawhub
+Write-Step "Installing latest OpenClaw npm tools"
+npm install -g openclaw@latest clawhub@latest
 
 Write-Step "Copying Michael workspace files"
 Copy-WorkspaceFile "AGENTS.md"
@@ -83,4 +83,3 @@ Write-Host ""
 Write-Host "Next:"
 Write-Host "  powershell -ExecutionPolicy Bypass -File .\scripts\verify-windows.ps1"
 Write-Host "  Read docs\secrets-and-auth.md"
-

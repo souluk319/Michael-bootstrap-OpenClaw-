@@ -65,8 +65,8 @@ if ! has npm; then
   exit 1
 fi
 
-log "Installing OpenClaw npm tools"
-npm install -g openclaw clawhub
+log "Installing latest OpenClaw npm tools"
+npm install -g openclaw@latest clawhub@latest
 
 log "Copying Michael workspace files"
 copy_workspace_file "AGENTS.md"
@@ -86,4 +86,3 @@ echo
 echo "Next:"
 echo "  bash scripts/verify-macos.sh"
 echo "  Read docs/secrets-and-auth.md"
-

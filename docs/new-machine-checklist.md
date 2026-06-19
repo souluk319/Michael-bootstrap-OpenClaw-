@@ -35,6 +35,23 @@ Windows:
 powershell -ExecutionPolicy Bypass -File .\scripts\verify-windows.ps1
 ```
 
+## Keep OpenClaw tools current
+
+Fresh bootstrap installs `openclaw@latest` and `clawhub@latest`.
+To update an existing machine later, run:
+
+macOS:
+
+```bash
+bash scripts/update-openclaw-tools.sh
+```
+
+Windows:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\update-openclaw-tools.ps1
+```
+
 ## Confirm workspace files
 
 Check:
@@ -93,4 +110,3 @@ npm -v
 python --version
 git --version
 ```
-

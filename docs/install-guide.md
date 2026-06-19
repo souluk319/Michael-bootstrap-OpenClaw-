@@ -52,6 +52,22 @@ If `npm` is unavailable after Node.js installation, close and reopen PowerShell,
 
 ## Updating an existing machine
 
+Update OpenClaw and ClawHub to the npm registry `latest` versions:
+
+macOS:
+
+```bash
+bash scripts/update-openclaw-tools.sh
+```
+
+Windows:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\update-openclaw-tools.ps1
+```
+
+Sync only Michael workspace files:
+
 macOS:
 
 ```bash
@@ -76,4 +92,3 @@ It does not automatically authenticate:
 - Supabase
 
 See `secrets-and-auth.md`.
-

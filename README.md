@@ -74,6 +74,26 @@ git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-b
 git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap; cd michael-bootstrap; powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows.ps1
 ```
 
+## 최신 버전 업데이트
+
+새 설치 시에는 `openclaw@latest`, `clawhub@latest`를 설치합니다.
+이미 설치된 PC에서 OpenClaw 계열 도구만 최신 버전으로 올리고 싶다면 아래 명령을 실행해 주세요.
+
+### macOS
+
+```bash
+bash scripts/update-openclaw-tools.sh
+```
+
+### Windows PowerShell
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\update-openclaw-tools.ps1
+```
+
+Git, Node.js, Python 같은 기반 도구는 OS/package manager 정책을 따릅니다.
+이 스크립트는 작업환경을 흔들 수 있는 전체 시스템 업그레이드 대신 OpenClaw/ClawHub만 안전하게 최신화합니다.
+
 ## 설치되는 항목
 
 - OpenClaw CLI
@@ -82,7 +102,7 @@ git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-b
 - Michael workspace 정체성 파일
 - 표준 프로젝트 폴더
 - 시크릿이 없는 로컬 env 템플릿
-- macOS / Windows 검증 스크립트
+- macOS / Windows 검증 및 업데이트 스크립트
 
 ## 포함된 Michael 파일
 
@@ -152,6 +172,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\verify-windows.ps1
 
 - macOS 설치 스크립트 준비 완료
 - Windows 설치 스크립트 준비 완료
+- OpenClaw/ClawHub 최신 버전 업데이트 스크립트 포함
 - workspace 설정 템플릿 포함
 - 검증 스크립트 포함
 - GitHub remote 연결 완료: `https://github.com/souluk319/Michael-bootstrap-OpenClaw-`
