@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Michael for OpenClaw</title>
-  <desc id="desc">A custom OpenClaw bootstrap banner for Michael, customized by KUGNUS.</desc>
+  <desc id="desc">A custom OpenClaw bootstrap banner for Michael with a white fedora and wavy black perm hair, customized by KUGNUS.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
       <stop stop-color="#10131A"/>
@@ -29,7 +29,7 @@
   <g transform="translate(126 102)">
     <text x="0" y="0" fill="#8BEADF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">OPENCLAW PERSONAL BUILD</text>
     <text x="0" y="86" fill="#F7F1E8" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="900" letter-spacing="0">Michael</text>
-    <text x="0" y="136" fill="#D8D2C9" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">One-touch workspace bootstrap for macOS and Windows</text>
+    <text x="0" y="136" fill="#D8D2C9" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">One-touch install for macOS &amp; Windows</text>
     <text x="0" y="184" fill="#9CA3AF" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500">Custom by www.kugnus.com</text>
 
     <g transform="translate(0 238)">
@@ -48,20 +48,60 @@
     <circle cx="172" cy="172" r="148" fill="#11151E" stroke="#303746" stroke-width="3"/>
     <circle cx="172" cy="172" r="112" fill="#171C27" stroke="#2E3542"/>
 
+    <g fill="#05070C" stroke="#1B1F2A" stroke-width="3">
+      <circle cx="119" cy="100" r="19"/>
+      <circle cx="139" cy="75" r="22"/>
+      <circle cx="171" cy="66" r="24"/>
+      <circle cx="203" cy="75" r="22"/>
+      <circle cx="225" cy="100" r="19"/>
+      <circle cx="110" cy="127" r="16"/>
+      <circle cx="234" cy="127" r="16"/>
+    </g>
+    <g fill="#252A36" opacity="0.72">
+      <circle cx="135" cy="69" r="5"/>
+      <circle cx="184" cy="60" r="5"/>
+      <circle cx="218" cy="95" r="4"/>
+      <circle cx="121" cy="119" r="4"/>
+    </g>
+
     <path d="M172 67 C116 67 87 114 87 151 C87 195 116 231 144 240 L144 259 H163 V243 C171 246 180 246 189 243 V259 H208 V240 C236 231 257 195 257 151 C257 114 228 67 172 67Z" fill="url(#claw)"/>
     <path d="M94 139 C66 130 49 149 59 170 C68 190 91 184 102 160 C108 148 105 141 94 139Z" fill="url(#claw)"/>
     <path d="M250 139 C278 130 295 149 285 170 C276 190 253 184 242 160 C236 148 239 141 250 139Z" fill="url(#claw)"/>
     <path d="M145 76 Q123 49 105 57" stroke="#FF6A5D" stroke-width="7" stroke-linecap="round"/>
     <path d="M199 76 Q221 49 239 57" stroke="#FF6A5D" stroke-width="7" stroke-linecap="round"/>
+    <g fill="#05070C" stroke="#171C27" stroke-width="3">
+      <circle cx="101" cy="102" r="13"/>
+      <circle cx="104" cy="127" r="12"/>
+      <circle cx="130" cy="89" r="10"/>
+      <circle cx="214" cy="89" r="10"/>
+      <circle cx="243" cy="102" r="13"/>
+      <circle cx="240" cy="127" r="12"/>
+    </g>
+    <g fill="none" stroke="#05070C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M127 88 C111 98 123 112 108 123 C94 134 108 149 92 160"/>
+      <path d="M139 91 C125 105 139 118 124 131 C111 143 124 156 112 168"/>
+      <path d="M216 88 C233 98 220 113 236 124 C250 135 237 150 252 160"/>
+      <path d="M205 91 C221 105 205 119 222 132 C235 143 221 156 233 168"/>
+    </g>
+    <g fill="none" stroke="#2B303B" stroke-width="3" stroke-linecap="round" opacity="0.86">
+      <path d="M124 101 C116 111 123 120 114 128"/>
+      <path d="M137 106 C131 116 139 124 130 134"/>
+      <path d="M220 101 C229 111 219 120 230 128"/>
+      <path d="M207 106 C214 116 205 124 215 134"/>
+    </g>
+    <g transform="rotate(-7 172 78)">
+      <path d="M108 83 C134 73 211 72 238 83 C252 89 249 102 235 106 C195 115 146 115 106 106 C92 102 94 89 108 83Z" fill="#F8F3E8" stroke="#D5CEC2" stroke-width="4"/>
+      <path d="M127 47 C148 33 198 33 218 47 L224 82 C198 94 145 94 120 82 L127 47Z" fill="#FFF9EF" stroke="#D5CEC2" stroke-width="4"/>
+      <path d="M123 75 C149 85 198 86 222 75 L224 88 C198 99 145 99 120 88 L123 75Z" fill="#171C27"/>
+      <path d="M137 46 C151 53 194 54 209 46" stroke="#FFFFFF" stroke-opacity="0.78" stroke-width="5" stroke-linecap="round"/>
+    </g>
     <circle cx="145" cy="118" r="13" fill="#050810"/>
     <circle cx="199" cy="118" r="13" fill="#050810"/>
     <circle cx="149" cy="114" r="5" fill="#37E8D1"/>
     <circle cx="203" cy="114" r="5" fill="#37E8D1"/>
     <path d="M133 180 C151 194 191 194 211 180" stroke="#2B0909" stroke-width="8" stroke-linecap="round"/>
 
-    <rect x="54" y="298" width="236" height="52" rx="18" fill="#F7F1E8"/>
-    <text x="86" y="331" fill="#12151C" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" letter-spacing="1">OPENCLAW</text>
-    <text x="207" y="331" fill="#C83B31" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">+</text>
-    <text x="228" y="331" fill="#12151C" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">MICHAEL</text>
+    <rect x="12" y="298" width="320" height="52" rx="18" fill="#F7F1E8"/>
+    <text x="172" y="331" text-anchor="middle" fill="#12151C" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">OPENCLAW + MICHAEL</text>
   </g>
 </svg>

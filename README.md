@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/openclaw-michael-hero.svg" alt="Michael for OpenClaw - custom by www.kugnus.com" width="100%" />
+  <img src="./assets/openclaw-michael-hero.svg" alt="OpenClaw mascot wearing a white fedora and curly hair for Michael - custom by www.kugnus.com" width="100%" />
 </p>
 
 # Michael for OpenClaw
