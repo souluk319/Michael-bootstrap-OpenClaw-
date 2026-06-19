@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+*.log
+tmp/
+dist/
+build/
+.openclaw-runtime/
+tokens/
+secrets/
+*.key
+*.pem
+client_secret*.json
+credentials*.json
+
