@@ -30,7 +30,7 @@ Windows support is designed for basic OpenClaw/workspace setup. Some Apple-speci
 ### macOS
 
 ```bash
-git clone <repo-url> michael-bootstrap
+git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap
 cd michael-bootstrap
 bash scripts/bootstrap-macos.sh
 ```
@@ -38,7 +38,7 @@ bash scripts/bootstrap-macos.sh
 ### Windows PowerShell
 
 ```powershell
-git clone <repo-url> michael-bootstrap
+git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git michael-bootstrap
 cd michael-bootstrap
 powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows.ps1
 ```
@@ -113,5 +113,5 @@ See `docs/secrets-and-auth.md`.
 - Windows installer added
 - workspace config templates copied
 - verification scripts added
-- GitHub push intentionally not done yet
-
+- GitHub remote connected: `https://github.com/souluk319/Michael-bootstrap-OpenClaw-`
+- Initial `main` push completed

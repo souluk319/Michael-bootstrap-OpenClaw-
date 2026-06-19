@@ -1,22 +1,26 @@
 # GitHub Push Plan
 
-GitHub push is intentionally deferred.
+Initial GitHub push completed on 2026-06-19.
 
-## Recommended repo
-
-```text
-michael-bootstrap
-```
-
-Recommended visibility:
+## Current repo
 
 ```text
-private
+https://github.com/souluk319/Michael-bootstrap-OpenClaw-
 ```
+
+Current branch:
+
+```text
+main
+```
+
+Observed visibility on 2026-06-19: `public`.
+
+Recommended visibility remains `private` if this repo should not expose personal workspace rules.
 
 ## Pre-push safety checklist
 
-Run before first push:
+Run before any future push:
 
 ```bash
 git status
@@ -31,13 +35,14 @@ Expected:
 - no OAuth client secret JSON
 - no local message database
 
-## First push flow
+## First push flow used
 
 ```bash
-git init
+git init -b main
+git remote add origin https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git
 git add -A
 git commit -m "Bootstrap Michael OpenClaw setup"
-gh repo create souluk319/michael-bootstrap --private --source . --remote origin --push
+git push -u origin main
 ```
 
 If `gh` is not authenticated:
@@ -51,7 +56,7 @@ gh auth login
 On a new machine:
 
 ```bash
-git clone git@github.com:souluk319/michael-bootstrap.git
+git clone https://github.com/souluk319/Michael-bootstrap-OpenClaw-.git
 ```
 
 Then run the OS-specific bootstrap script.
