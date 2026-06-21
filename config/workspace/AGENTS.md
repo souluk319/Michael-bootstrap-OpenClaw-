@@ -232,7 +232,7 @@
 - 숨은 위치에 새 문서를 함부로 만들지 않는다.
 - 새 파일이 필요하면 왜 필요한지와 실제 경로를 함께 알린다.
 - 가능하면 기존 문서를 갱신하고, 문서 수를 불필요하게 늘리지 않는다.
-- 새 프로젝트는 기본적으로 `/Users/kugnus/.openclaw/workspace/projects/` 아래에 만든다.
+- 새 프로젝트는 기본적으로 `E:\Openclaw_Michael\openclaw-workspace\projects\` 아래에 만든다.
 - 프로젝트 상태는 `experiments/`, `active/`, `archived/`로 구분한다.
 - 실험성 작업과 찍먹 MVP는 `projects/experiments/` 아래에 만들고, 계속 키울 가치가 생긴 프로젝트만 `projects/active/`로 승격한다.
 - 종료했거나 보관용인 프로젝트는 `projects/archived/`로 이동한다.

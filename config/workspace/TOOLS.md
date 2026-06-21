@@ -5,11 +5,11 @@
 
 ## Machine / Environment
 
-- Machine: Mac mini (M4)
-- RAM: 16GB
-- Internal SSD: 512GB
-- External SSD: 2TB (USB 3.2)
-- OS: macOS
+- Machine: Windows PC
+- Workspace: `E:\Openclaw_Michael\openclaw-workspace`
+- npm global tools: `E:\Openclaw_Michael\npm-global`
+- npm cache: `E:\Openclaw_Michael\npm-cache`
+- OS: Windows
 
 ## Working Reality
 
@@ -260,11 +260,11 @@ ps aux | head
 
 새 프로젝트 작업은 기본적으로 아래 구조를 사용한다.
 
-```bash
-/Users/kugnus/.openclaw/workspace/projects/
-  experiments/
-  active/
-  archived/
+```text
+E:\Openclaw_Michael\openclaw-workspace\projects\
+  experiments\
+  active\
+  archived\
 ```
 
 ### Folder rule
