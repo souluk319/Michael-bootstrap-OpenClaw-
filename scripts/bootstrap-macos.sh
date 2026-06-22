@@ -22,9 +22,10 @@ backup_if_exists() {
 }
 
 copy_workspace_file() {
-  local name="$1"
-  local src="$ROOT_DIR/config/workspace/$name"
-  local dst="$WORKSPACE_DIR/$name"
+  local src_name="$1"
+  local dst_name="${2:-$src_name}"
+  local src="$ROOT_DIR/config/workspace/$src_name"
+  local dst="$WORKSPACE_DIR/$dst_name"
 
   if [ ! -f "$src" ]; then
     echo "missing template: $src" >&2
@@ -72,7 +73,7 @@ log "Copying Michael workspace files"
 copy_workspace_file "AGENTS.md"
 copy_workspace_file "SOUL.md"
 copy_workspace_file "IDENTITY.md"
-copy_workspace_file "USER.md"
+copy_workspace_file "USER.example.md" "USER.md"
 copy_workspace_file "TOOLS.md"
 
 if [ ! -f "$WORKSPACE_DIR/.env.local" ]; then

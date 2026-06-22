@@ -111,7 +111,7 @@ Git, Node.js, Python 같은 기반 도구는 OS/package manager 정책을 따릅
 - `AGENTS.md`
 - `SOUL.md`
 - `IDENTITY.md`
-- `USER.md`
+- `USER.example.md` -> `USER.md`
 - `TOOLS.md`
 
 기존 파일은 교체 전에 백업합니다.

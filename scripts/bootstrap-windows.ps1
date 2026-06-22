@@ -29,9 +29,9 @@ function Install-WingetPackage($Id) {
   winget install --id $Id --silent --accept-package-agreements --accept-source-agreements
 }
 
-function Copy-WorkspaceFile($Name) {
+function Copy-WorkspaceFile($Name, $TargetName = $Name) {
   $Source = Join-Path $RootDir "config\workspace\$Name"
-  $Target = Join-Path $WorkspaceDir $Name
+  $Target = Join-Path $WorkspaceDir $TargetName
 
   if (-not (Test-Path $Source)) {
     throw "missing template: $Source"
@@ -68,7 +68,7 @@ Write-Step "Copying Michael workspace files"
 Copy-WorkspaceFile "AGENTS.md"
 Copy-WorkspaceFile "SOUL.md"
 Copy-WorkspaceFile "IDENTITY.md"
-Copy-WorkspaceFile "USER.md"
+Copy-WorkspaceFile "USER.example.md" "USER.md"
 Copy-WorkspaceFile "TOOLS.md"
 
 $EnvTarget = Join-Path $WorkspaceDir ".env.local"

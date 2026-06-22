@@ -14,4 +14,4 @@ secrets/
 *.pem
 client_secret*.json
 credentials*.json
-
+config/workspace/USER.md

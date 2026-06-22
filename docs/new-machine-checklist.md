@@ -59,7 +59,7 @@ Check:
 - `AGENTS.md`
 - `SOUL.md`
 - `IDENTITY.md`
-- `USER.md`
+- `USER.md` created from `config/workspace/USER.example.md`
 - `TOOLS.md`
 - `.env.local`
 - `projects/experiments`
